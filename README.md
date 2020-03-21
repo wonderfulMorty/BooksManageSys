@@ -32,8 +32,7 @@ ssm,easypoi(对excel导入导出)，下拉列表二级联动，live-2d看板娘�
 ![教师领取教材](https://github.com/wonderfulMorty/BooksManageSys/blob/master/run_img/Snipaste_2020-03-16_12-24-31.png)
 6.学生领取教材
 ![学生领取教材](https://github.com/wonderfulMorty/BooksManageSys/blob/master/run_img/Snipaste_2020-03-16_12-25-17.png)
-6.学生付款
-![学生付款](https://github.com/wonderfulMorty/BooksManageSys/blob/master/run_img/Snipaste_2020-03-16_12-25-43.png)
+
 五、项目运行视频
 
 链接：https://pan.baidu.com/s/1bjY8rtMEMPtAyIPgMNK9dg
