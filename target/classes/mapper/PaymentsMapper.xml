@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dev.books.dao.PaymentsMapper">
+
+   <!-- <select id="findAllPayments" resultType="com.dev.books.pojo.Payments">
+        select stoo.user_id,(stoo.book_out-stoo.book_back) book_num,b.book_price*(stoo.book_out-stoo.book_back) book_total
+        from store_out stoo
+        inner join user u
+        on u.id = stoo.user_id
+        inner join book b
+        on b.id = stoo.book_id
+        where u.identification = '学生' and stoo.id in
+        <foreach collection="list" item="id" open="(" close=")" separator=",">
+            #{arg0}
+        </foreach>
+    </select>-->
+
+    <insert id="insertPayments">
+        insert into payments(stoo_id,payment,pay_time)
+        values(#{arg0},#{arg1},#{arg2})
+    </insert>
+
+    <select id="historyPay" resultType="com.dev.books.pojo.Payments">
+        select u.name,b.book_name,b.book_price,pay.payment,pay.pay_time
+        from store_out stoo
+        inner join
+        (
+        select py.stoo_id,py.payment,py.pay_time from payments py
+        where py.stoo_id in
+        (
+        select stoo.id from store_out stoo
+        where stoo.user_id = #{arg0}
+        )
+        ) pay
+        on pay.stoo_id = stoo.id
+        inner join book b
+        on b.id = stoo.book_id
+        inner join user u
+        on u.id = stoo.user_id
+    </select>
+    <select id="allHistoryPay" resultType="com.dev.books.pojo.Payments">
+        select u.name,b.book_name,b.book_price,pay.payment,pay.pay_time
+        from store_out stoo
+        inner join
+        (
+            select py.stoo_id,py.payment,py.pay_time from payments py
+            where py.stoo_id in
+            (
+            select stoo.id from store_out stoo
+            )
+        ) pay
+        on pay.stoo_id = stoo.id
+        inner join book b
+        on b.id = stoo.book_id
+        inner join user u
+        on u.id = stoo.user_id
+    </select>
+</mapper>

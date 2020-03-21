@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dev.books.dao.StoreOutMapper">
+
+    <insert id="addReceiveBook" >
+        insert into store_out(id,user_id,book_out,book_id)
+        values (#{id},#{user_id},#{book_out},#{book_id})
+    </insert>
+
+    <select id="findStoreOutByUserId" resultType="com.dev.books.pojo.StoreOut">
+        select b.id,stoo.book_id,stoo.user_id,b.book_name,b.book_price,qs.qs_name,stoo.id stoo_id ,stoo.book_out,stoo.book_back
+        from book b
+        inner join store_out stoo
+        on stoo.book_id = b.id
+        inner join qs
+        on b.qs_id = qs.id
+        where stoo.user_id = #{arg0}
+    </select>
+
+    <select id="findStoreOutById" resultType="com.dev.books.pojo.StoreOut">
+        select store_out.*
+        from store_out
+        where id = #{arg0}
+    </select>
+
+    <update id="updateTeacherBookOut">
+        update store_out
+        set book_out = #{arg0}
+        where book_id = #{arg1} and user_id = #{arg2}
+    </update>
+
+    <!--退书-->
+    <!--情况1：把这本书全部退掉（那么直接删除这条记录）-->
+    <delete id="deleteStoreOutByUidandBid">
+        delete from store_out where book_id = #{arg0} and user_id = #{arg1}
+    </delete>
+    <!--情况2：把这本书退掉一部分，那么修改这名教师拥有的教材数即可-->
+    <update id="updateTeacherBookBack">
+        update store_out
+        set book_back = #{arg0}
+        where book_id = #{arg1} and user_id = #{arg2}
+    </update>
+
+    <!--只让同一个人，领取同一本书一次-->
+    <select id="findStooByUidAndBid" resultType="com.dev.books.pojo.StoreOut">
+        select stoo.*
+        from store_out stoo
+        where stoo.user_id = #{arg0} and stoo.book_id = #{arg1}
+    </select>
+
+</mapper>

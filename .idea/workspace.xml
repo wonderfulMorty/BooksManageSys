@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Books:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8b87beb-b4c1-482e-9652-6c5e4268afe3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="98" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Books" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="jsf" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="true" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven_cang" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.5.3-bin\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1XC4kESmKxquOFxIB0nT118cmdu" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/git/install/Git/cmd/git.exe" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\idea_java_workspace\Books" />
+      <recent name="E:\idea_java_workspace\Books\src\main\webapp" />
+      <recent name="E:\idea_java_workspace\Books\src\main\webapp\WEB-INF" />
+      <recent name="E:\idea_java_workspace\Books\src\main\webapp\lib\layui\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dev.books.dao" />
+      <recent name="com.dev.books.config" />
+      <recent name="com.dev.books.service" />
+      <recent name="com.dev.books.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\idea_java_workspace\Books\src\main\webapp\js" />
+      <recent name="E:\idea_java_workspace\Books\src\main\webapp\WEB-INF\views" />
+      <recent name="E:\idea_java_workspace\Books\src\main\resources\mapper" />
+      <recent name="E:\idea_java_workspace\Books\src\main\webapp\css" />
+      <recent name="E:\idea_java_workspace\Books\logs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.books">
+    <configuration name="RandNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dev.books.util.RandNum" />
+      <module name="Books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dev.books.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="books" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M26" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <deployment>
+        <artifact name="Books:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Books" />
+          </settings>
+        </artifact>
+        <file path="F:/uploads">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Books/uploads" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Books_2" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55093" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RandNum" />
+      <item itemvalue="Tomcat Server.books" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RandNum" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8b87beb-b4c1-482e-9652-6c5e4268afe3" name="Default Changelist" comment="" />
+      <created>1580536883454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580536883454</updated>
+      <workItem from="1580536886194" duration="11663000" />
+      <workItem from="1580636464822" duration="2785000" />
+      <workItem from="1580639404387" duration="3138000" />
+      <workItem from="1580642652889" duration="11201000" />
+      <workItem from="1580654094997" duration="2843000" />
+      <workItem from="1580658135366" duration="6192000" />
+      <workItem from="1580706008516" duration="19533000" />
+      <workItem from="1580728635097" duration="3464000" />
+      <workItem from="1580732327875" duration="13181000" />
+      <workItem from="1580792372730" duration="35235000" />
+      <workItem from="1580877471602" duration="31604000" />
+      <workItem from="1580966570797" duration="32820000" />
+      <workItem from="1581056083777" duration="29110000" />
+      <workItem from="1581133283444" duration="37804000" />
+      <workItem from="1581215200458" duration="12965000" />
+      <workItem from="1581312597872" duration="1154000" />
+      <workItem from="1581325775032" duration="1232000" />
+      <workItem from="1581403216155" duration="11453000" />
+      <workItem from="1581474442078" duration="9394000" />
+      <workItem from="1581562811666" duration="12187000" />
+      <workItem from="1581659308619" duration="764000" />
+      <workItem from="1581664059853" duration="4236000" />
+      <workItem from="1581683984657" duration="1007000" />
+      <workItem from="1581737398085" duration="10123000" />
+      <workItem from="1581830673759" duration="271000" />
+      <workItem from="1581842294189" duration="968000" />
+      <workItem from="1582093722469" duration="18893000" />
+      <workItem from="1582174784870" duration="4208000" />
+      <workItem from="1582265571039" duration="3922000" />
+      <workItem from="1582348968646" duration="3404000" />
+      <workItem from="1582359164744" duration="2016000" />
+      <workItem from="1582437302806" duration="592000" />
+      <workItem from="1582619546210" duration="1870000" />
+      <workItem from="1582792554793" duration="1243000" />
+      <workItem from="1583139795513" duration="2340000" />
+      <workItem from="1583375881103" duration="10703000" />
+      <workItem from="1583404571423" duration="2119000" />
+      <workItem from="1583474577929" duration="9352000" />
+      <workItem from="1583495605945" duration="14989000" />
+      <workItem from="1583557807286" duration="8384000" />
+      <workItem from="1583641687934" duration="1806000" />
+      <workItem from="1583644753213" duration="2888000" />
+      <workItem from="1583729203205" duration="1778000" />
+      <workItem from="1583749369626" duration="2032000" />
+      <workItem from="1583827792685" duration="1377000" />
+      <workItem from="1583904642926" duration="772000" />
+      <workItem from="1584332122008" duration="3542000" />
+      <workItem from="1584513661003" duration="3125000" />
+      <workItem from="1584518582933" duration="1194000" />
+      <workItem from="1584527473382" duration="593000" />
+      <workItem from="1584538820477" duration="1663000" />
+      <workItem from="1584582201711" duration="611000" />
+      <workItem from="1584583064529" duration="612000" />
+      <workItem from="1584586013550" duration="1242000" />
+      <workItem from="1584587529329" duration="1199000" />
+      <workItem from="1584598827389" duration="620000" />
+      <workItem from="1584600521964" duration="1204000" />
+      <workItem from="1584624034277" duration="1179000" />
+      <workItem from="1584670069747" duration="5853000" />
+      <workItem from="1584755224703" duration="1000000" />
+      <workItem from="1584777723190" duration="811000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history>
+      <element expression="ttms" />
+    </find-history>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Books$books.ic" NAME="books Coverage Results" MODIFIED="1580818699168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

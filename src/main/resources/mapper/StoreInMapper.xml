@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dev.books.dao.StoreInMapper">
+
+    <select id="findAllStoreIn" resultType="com.dev.books.pojo.StoreIn">
+        select sto_in.id,sto_in.store_time,sto_in.store_info,sto_in.book_count,sto_in.book_init,b.book_name,b.book_price,qs.qs_name
+        from store_in sto_in
+        inner join book b
+        on sto_in.book_id = b.id
+        inner join qs
+        on qs.id = b.qs_id
+    </select>
+
+    <select id="findAllStoreInByPage" resultType="com.dev.books.pojo.StoreIn">
+         select sto_in.id,sto_in.store_time,sto_in.store_info,sto_in.book_count,sto_in.book_init,b.book_name,b.book_price,qs.qs_name
+        from store_in sto_in
+        inner join book b
+        on sto_in.book_id = b.id
+        inner join qs
+        on qs.id = b.qs_id
+        limit #{arg0},#{arg1}
+    </select>
+
+    <insert id="insertStoreIn" >
+        insert into store_in(id,store_time,store_info,book_count,book_init,book_id)
+        select #{id},#{store_time},#{store_info},#{book_count},#{book_init},b.id
+        from book b
+        where b.book_name=#{book_name} and b.qs_id =
+			(select id
+			    from qs
+				where qs.qs_name = #{qs_name}
+			)
+    </insert>
+
+    <select id="findStoreInById" resultType="com.dev.books.pojo.StoreIn">
+        select *
+        from store_in
+        where id = #{id}
+    </select>
+
+    <select id="findStoreInByBookId" resultType="com.dev.books.pojo.StoreIn">
+        select *
+        from store_in
+        where book_id = #{arg0}
+    </select>
+
+    <update id="updateBookCount">
+        update store_in
+        set book_count = #{arg0}
+        where id = #{arg1}
+    </update>
+
+    <update id="updateBookCountByBookId">
+        update store_in
+        set book_count = #{arg0}
+        where book_id = #{arg1}
+    </update>
+
+    <delete id="deleteStoreIn">
+        delete from store_in
+        where id = #{arg0}
+    </delete>
+
+    <select id="findStoreInPercent" resultType="com.dev.books.pojo.StoreIn">
+        select bo.*,middletable.book_count,middletable.book_init
+        from book bo
+        inner join
+        (
+        select sto_in.*
+                from store_in sto_in
+                        where sto_in.book_id
+                in
+                (
+                select b.id
+                from book b
+                where b.book_kind = #{arg0}
+                )
+                        group by sto_in.book_id
+        ) middletable
+        on bo.id = middletable.book_id
+    </select>
+
+</mapper>

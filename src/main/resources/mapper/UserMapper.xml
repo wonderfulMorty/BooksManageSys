@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dev.books.dao.UserMapper">
+
+    <select id="findOneUser" resultType="com.dev.books.pojo.User">
+      select * from User where id = #{arg0} and password= #{arg1}
+    </select>
+
+    <select id="findUserByCondictions" resultType="com.dev.books.pojo.User">
+        select u.*,col.col_name,prof.prof_name,gra.gra_name,ccl.ccl_name  from user u
+        inner join userinfo ui
+        on u.id = ui.user_id
+        inner join college col
+        on ui.col_id = col.id
+        inner join profession prof
+        on ui.prof_id = prof.id
+        inner join grade gra
+        on ui.gra_id = gra.id
+        inner join cclass ccl
+        on ui.ccl_id = ccl.id
+        where col.col_name = #{arg0} and prof.prof_name = #{arg1}
+        and gra.gra_name = #{arg2} and ccl.ccl_name = #{arg3}
+    </select>
+
+    <select id="findAllUsersByPage" resultType="com.dev.books.pojo.User">
+        select u.*,col.col_name,prof.prof_name,gra.gra_name,ccl.ccl_name  from user u
+        inner join userinfo ui
+        on u.id = ui.user_id
+        inner join college col
+        on ui.col_id = col.id
+        inner join profession prof
+        on ui.prof_id = prof.id
+        inner join grade gra
+        on ui.gra_id = gra.id
+        inner join cclass ccl
+        on ui.ccl_id = ccl.id
+        limit #{arg0},#{arg1}
+    </select>
+
+    <select id="findAllUsers" resultType="com.dev.books.pojo.User">
+        select u.*,col.col_name,prof.prof_name,gra.gra_name,ccl.ccl_name  from user u
+        inner join userinfo ui
+        on u.id = ui.user_id
+        inner join college col
+        on ui.col_id = col.id
+        inner join profession prof
+        on ui.prof_id = prof.id
+        inner join grade gra
+        on ui.gra_id = gra.id
+        inner join cclass ccl
+        on ui.ccl_id = ccl.id
+    </select>
+
+    <select id="findTeacherByUserId" resultType="com.dev.books.pojo.User">
+        select ui.t_id ,u.identification,u.name,u.id
+        from userinfo ui
+        inner join user u
+        on ui.user_id = u.id
+        where ui.user_id = #{arg0}
+    </select>
+
+    <update id="updateUserInfo">
+        update user
+        set name = #{name}, phone = #{phone}, email = #{email},photo = #{photo}
+        where id = #{id}
+    </update>
+
+    <update id="updateUserPwd">
+        update user
+        set password = #{arg0}
+        where id = #{arg1}
+    </update>
+
+    <select id="findUserById" resultType="com.dev.books.pojo.User">
+        select user.*
+        from user
+        where id = #{arg0}
+    </select>
+
+    <delete id="deleteUser" >
+        delete from user where id = #{arg0}
+    </delete>
+
+    <delete id="deleteStuUserInfo" >
+        delete from userinfo where user_id = #{arg0}
+    </delete>
+
+    <delete id="deleteTeacherUserInfo" >
+        delete from userinfo where t_id = #{arg0}
+    </delete>
+
+    <select id="findAllTeacher" resultType="com.dev.books.pojo.User">
+        select u.* from user u
+        where u.identification = '教师'
+    </select>
+
+    <insert id="insertUser">
+        insert into user(id,name,password,phone,email,identification)
+        values(#{id},#{name},#{password},#{phone},#{email},#{identification})
+    </insert>
+
+    <insert id="insertStuUserInfo">
+       insert into userinfo(user_id,col_id,prof_id,gra_id,ccl_id,t_id)
+       values(#{user_id},#{col_id},#{prof_id},#{gra_id},#{ccl_id},#{t_id})
+    </insert>
+
+    <insert id="insertTeaUserInfo">
+       insert into userinfo(user_id,col_id,prof_id,gra_id,ccl_id)
+       values(#{user_id},#{col_id},#{prof_id},#{gra_id},#{ccl_id})
+    </insert>
+
+
+</mapper>

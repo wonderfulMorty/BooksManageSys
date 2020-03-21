@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dev.books.dao.BookMapper">
+
+    <select id="findAllBookByPages" resultType="com.dev.books.pojo.Book">
+        select b.id,b.book_name,b.book_kind,b.book_price,qs.qs_name
+        from book b
+        inner join qs
+        on b.qs_id = qs.id
+        limit #{arg0},#{arg1}
+    </select>
+
+    <select id="findAllBook" resultType="com.dev.books.pojo.Book">
+        select b.id,b.book_name,b.book_kind,b.book_price,qs.qs_name
+        from book b
+        inner join qs
+        on b.qs_id = qs.id
+    </select>
+
+    <select id="findAllBookByBookName" resultType="com.dev.books.pojo.Book">
+        select b.id,b.book_name,b.book_kind,b.book_price,qs.qs_name
+        from book b
+        inner join qs
+        on b.qs_id = qs.id
+        where book_name like CONCAT(CONCAT('%',#{arg0}),'%')
+    </select>
+
+    <select id="findAllBookKind" resultType="com.dev.books.pojo.Book">
+       select DISTINCT (b.book_kind)
+        from book b
+        inner join qs
+        on b.qs_id = qs.id
+    </select>
+
+    <select id="findBookById" resultType="com.dev.books.pojo.Book">
+        select b.book_name,b.book_price,qs.qs_name
+        from book b
+        inner join qs
+        on b.qs_id = qs.id
+        where b.id = #{arg0}
+    </select>
+
+    <insert id="addBook" >
+        insert into book(id,book_name,book_kind,book_price,qs_id)
+        select #{id},#{book_name},#{book_kind},#{book_price},qs.id
+        from qs
+        where qs_name = #{qs_name}
+    </insert>
+
+    <update id="updateBookById">
+        update Book
+        set book_name = #{book_name},
+        book_kind = #{book_kind},
+        book_price = #{book_price},
+        qs_id = (
+            select qs.id
+            from qs
+            where qs.qs_name = #{qs_name}
+        )
+        where book.id = #{id}
+    </update>
+
+    <delete id="deleteBookById">
+        delete from book
+        where id = #{arg0}
+    </delete>
+
+    <select id="findBookNameByQsName" resultType="String">
+        select b.book_name
+        from book b
+        inner join qs
+        on b.qs_id = qs.id and qs.qs_name=#{arg0}
+    </select>
+
+</mapper>
