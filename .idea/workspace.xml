@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b87beb-b4c1-482e-9652-6c5e4268afe3" name="Default Changelist" comment="" />
+    <list default="true" id="d8b87beb-b4c1-482e-9652-6c5e4268afe3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/github_bookManaSys.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +55,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="LogFilters">
@@ -63,6 +69,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\maven_cang" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.5.3-bin/apache-maven-3.5.3" />
         <option name="userSettingsFile" value="D:\maven\apache-maven-3.5.3-bin\apache-maven-3.5.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -73,13 +80,14 @@
   </component>
   <component name="ProjectId" id="1XC4kESmKxquOFxIB0nT118cmdu" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/git/install/Git/cmd/git.exe" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -289,11 +297,23 @@
       <workItem from="1584670069747" duration="5853000" />
       <workItem from="1584755224703" duration="1000000" />
       <workItem from="1584777723190" duration="811000" />
+      <workItem from="1585633080048" duration="201000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
