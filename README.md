@@ -3,7 +3,7 @@ ssm教材管理系统
 
 一、主要技术点
 
-ssm,easypoi(对excel导入导出)，下拉列表二级联动，live-2d看板娘，echartjs图表，图片上传下载
+ssm,easypoi(对excel导入导出)，下拉列表二级联动，live-2d看板娘，echartjs图表，图片上传下载。。
 
 二、主要业务逻辑
 
